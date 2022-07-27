@@ -2,7 +2,10 @@ package main
 
 import "fmt"
 
+func bazz() {
+	fmt.Println("Buzz")
+}
+
 func main() {
-	t, f := true, false
-	fmt.Printf("%T, %v\n, t, t")
+	fmt.Println("Hello Wolrld!")
 }
