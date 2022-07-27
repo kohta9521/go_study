@@ -1,8 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	t, f := true, false
-	fmt.Printf("%T, %v\n, t, t")
+	fmt.Println("Hello Wolrld!", time.Now())
 }
