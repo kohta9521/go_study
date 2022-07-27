@@ -1,11 +1,10 @@
 package main
 
-import "fmt"
-
-func bazz() {
-	fmt.Println("Buzz")
-}
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	fmt.Println("Hello Wolrld!")
+	fmt.Println("Hello Wolrld!", time.Now())
 }
