@@ -17,4 +17,7 @@ func main() {
 
 	fmt.Println("Test\n" +
 		"Test")
+
+	fmt.Println("\"")
+	fmt.Println(`\`)
 }
