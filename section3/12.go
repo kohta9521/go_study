@@ -7,4 +7,15 @@ func main() {
 	t, f := true, false
 	fmt.Printf("%T %v\n", t, t)
 	fmt.Printf("%T %v\n", f, f)
+
+	fmt.Println(true && true)
+	fmt.Println(true && false)
+	fmt.Println(false && false)
+
+	fmt.Println(true || true)
+	fmt.Println(true || false)
+	fmt.Println(false || false)
+
+	fmt.Println(!true)
+	fmt.Println(!false)
 }
