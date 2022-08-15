@@ -16,5 +16,8 @@ func main() {
 
 	var s string = "14"
 	i, _ := strconv.Atoi(s)
-	fomt.Printf("%T %v %d\n", i, i)
+	fmt.Printf("%T %v\n", i, i)
+
+	h := "Hello world"
+	fmt.Println(string(h[0]))
 }
