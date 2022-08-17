@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+/*
+	この部分は複数行用のコメントアウト
+*/
+
 func init() {
 	fmt.Println("Init")
 }
@@ -12,5 +16,5 @@ func buzz() {
 
 func main() {
 	buzz()
-	fmt.Println("Hello World!")
+	fmt.Println("Hello World!", "TEST TESR")
 }
