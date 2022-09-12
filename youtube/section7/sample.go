@@ -13,6 +13,13 @@ func main() {
 	num03 := 1.23
 	var num04 float64 = 1.23456789
 
+	a := 10
+	b := 1
+	var num_bool bool = a > b
+
+	fmt.Println(num_bool)
+	fmt.Println(reflect.TypeOf(num_bool))
+
 	fmt.Println(string_a)
 	fmt.Println(reflect.TypeOf(string_a))
 
