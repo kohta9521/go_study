@@ -6,11 +6,11 @@ func sayHello(greeting string) {
 	fmt.Println(greeting)
 }
 
-func cal(x int) {
-	fmt.Println(x * 3)
+func cal(x, y int) int {
+	return (x / y)
 }
 
 func main() {
 	sayHello("Good morning!")
-	cal(8)
+	cal(8, 3)
 }
