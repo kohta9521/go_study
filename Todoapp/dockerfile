@@ -1,0 +1,15 @@
+
+FROM golang:1.14
+
+RUN  go get -u github.com/gin-gonic/gin
+
+WORKDIR /app
+COPY . /app
+
+ENV CGO_ENABLED=0 \
+    GOOS=linux \
+    GOARCH=amd64
+
+EXPOSE 8080
+
+CMD ["go", "run", "main.go"]
