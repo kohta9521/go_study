@@ -18,7 +18,7 @@ func main() {
 	nums4 := nums2[1:3]//スライスから
 
 	//配列と同じようにブラケットで要素取得可能
-	fmt.Println(nums2[1]) // 2
+	fmt.Println(nums2[1]) // 
 
 	nums2[0] = 100
 	fmt.Println(len(nums2)) // 3
