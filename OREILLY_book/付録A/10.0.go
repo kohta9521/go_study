@@ -16,5 +16,5 @@ func main() {
 		fmt.Println("cached value", result)
 	}
 
-	
+
 }
