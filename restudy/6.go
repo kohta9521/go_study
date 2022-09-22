@@ -2,19 +2,12 @@ package main
 
 import "fmt"
 
-/*
-	この部分は複数行用のコメントアウト
-*/
-
-func init() {
-	fmt.Println("Init")
+func main() {
+	fmt.Println("Hello world!")
+	buzz()
 }
 
 func buzz() {
-	fmt.Println("Buzz")
-}
 
-func main() {
-	buzz()
-	fmt.Println("Hello World!", "TEST TESR")
+	fmt.Println("Hello world!, test")
 }
