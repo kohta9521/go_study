@@ -10,3 +10,9 @@ var i64 int64 = int64(i)
 
 //boolへの変換は比較演算子を用います。
 var b bool = i != 9
+
+
+//文字列との変換はstrcovを利用
+in = 12345
+//strconvの数値入力はint64 
+s := strconv.FormatInt(int64(in), 10)
