@@ -4,10 +4,12 @@ import (
 	"fmt"
 )
 
-var i int = 10
+func main() {
+	var i int = 10
 
-var p *int
+	var p *int
 
-p = &i
+	p = &i
 
-fmt.Println(*p)
+	fmt.Println(*p)
+}
