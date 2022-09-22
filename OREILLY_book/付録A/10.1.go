@@ -16,10 +16,10 @@ func main() {
 		fmt.Println("erverError")
 	}
 
-	if result, ok := cache[input]; ok {
-		for i, s := range scketches {
-			fmt.Println(i, s)
-		}
-	}
+	// if result, ok := cache[input]; ok {
+	// 	for i, s := range scketches {
+	// 		fmt.Println(i, s)
+	// 	}
+	// }
 
 }
