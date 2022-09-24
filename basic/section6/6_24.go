@@ -14,4 +14,8 @@ func main() {
 	fmt.Println(43 / 2)
 
 	fmt.Println(4 % 2)
+
+	n := 0
+	n += 4
+	fmt.Println(n)
 }
