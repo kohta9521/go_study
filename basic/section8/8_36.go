@@ -13,7 +13,8 @@ func main() {
 
 	i, err := strconv.Atoi(s)
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println("Error")
 	}
-	fmt.Println("i =  %T\n", i)
+	fmt.Printf("i = %d\n", i)
+
 }

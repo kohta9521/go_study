@@ -19,6 +19,8 @@ func main() {
 		fmt.Println("one hundred")
 	}
 
+	//注意部分
+
 	x := 0
 	if x := 2; true {
 		fmt.Println(x)
