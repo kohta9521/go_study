@@ -47,6 +47,7 @@ func main() {
 	fmt.Println(i2)
 	fmt.Println("lem", len(ch3))
 
+	//異なる記述方法
 	fmt.Println(<-ch3)
 	fmt.Println("lem", len(ch3))
 }
