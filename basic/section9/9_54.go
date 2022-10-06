@@ -50,4 +50,16 @@ func main() {
 	//異なる記述方法
 	fmt.Println(<-ch3)
 	fmt.Println("lem", len(ch3))
+
+	ch3 <- 1
+	fmt.Println("len", len(ch3))
+	fmt.Println(<-ch3)
+	fmt.Println("len", len(ch3))
+
+	ch3 <- 2
+	ch3 <- 3
+	ch3 <- 4
+	ch3 <- 5
+	ch3 <- 6
+
 }
