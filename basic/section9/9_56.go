@@ -22,19 +22,20 @@ func reciever(name string, ch chan int) {
 func main() {
 	ch1 := make(chan int, 2)
 
-	// ch1 <- 1
+	/*
+		ch1 <- 1
 
-	// close(ch1)
+		close(ch1)
 
-	// //ch1 <- 1
+		//ch1 <- 1
+		// fmt.Println(<-ch1)
 
-	// // fmt.Println(<-ch1)
+		i, ok := <-ch1
+		fmt.Println(i, ok)
 
-	// i, ok := <-ch1
-	// fmt.Println(i, ok)
-
-	// i2, ok := <-ch1
-	// fmt.Println(i2, ok)
+		i2, ok := <-ch1
+		fmt.Println(i2, ok)
+	*/
 
 	go reciever("1.goroutin", ch1)
 	go reciever("2.goroutin", ch1)
@@ -47,5 +48,4 @@ func main() {
 	}
 	close(ch1)
 	time.Sleep(3 * time.Second)
-
 }
