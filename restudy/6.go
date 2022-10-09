@@ -1,13 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func main() {
-	fmt.Println("Hello world!")
-	buzz()
+//main関数の中でしか呼び出せない
+func buzz() {
+	fmt.Println("Buzz")
 }
 
-func buzz() {
+//main関数よりも先に表示される しばしば初期設定などで使用される
+func init() {
+	fmt.Println("init")
+}
 
-	fmt.Println("Hello world!, test")
+func main() {
+	fmt.Println("Hello World", "TEST")
+	buzz()
 }
