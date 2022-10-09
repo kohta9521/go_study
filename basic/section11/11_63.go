@@ -6,10 +6,14 @@ import (
 
 type User struct {
 	Name string
-	Age int
-	// X. Y
+	Age  int
 }
 
-func main() [
-	
-]
+func (u User) SayName() {
+	fmt.Println(u.Name)
+}
+
+func main() {
+	user1 := User{Name: "user1"}
+	user1.SayName()
+}
