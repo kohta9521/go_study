@@ -15,12 +15,15 @@ func main() {
 
 	// fmt.Println("%T %v", u8, u8)
 
-	x := 1 + 1
-	fmt.Println(x)
-	fmt.Println(1+1, 2+2)
+	// x := 1 + 1
+	// fmt.Println(x)
+	// fmt.Println(1+1, 2+2)
 
-	fmt.Println("1 + 1 = ", 1+1)
-	fmt.Println("10 - 1", 10-1)
-	fmt.Println("10 / 2 = ", 10/2)
+	// fmt.Println("1 + 1 = ", 1+1)
+	// fmt.Println("10 - 1", 10-1)
+	// fmt.Println("10 / 2 = ", 10/2)
+
+	fmt.Println(1 << 0)
+	fmt.Println(1 << 1)
 
 }
