@@ -4,6 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
+	"strings"
 )
 
 func Input(msg string) string {
@@ -14,5 +16,19 @@ func Input(msg string) string {
 }
 
 func main() {
+	x := Input("input data")
+	ar := strings.Split(x, " ")
+	t := 0
+	for _, v := range ar {
+		n, er := strconv.Atoi(v)
+		if er != nil {
+			goto errr
+		}
+		t += n
+	}
+	fmt.Println("total:", t)
+	return
 
+err:
+	fmt.Println("ERROR!!")
 }
