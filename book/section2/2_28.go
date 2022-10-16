@@ -5,11 +5,11 @@ import (
 )
 
 func main() {
-	modify := func(a []string, f func([]string) [string] []string {
+	modify := func(a []string, f func([]string) []string) []string {
 		return f(a)
 	}
 
-	m := []string {
+	m := []string{
 		"1st", "2nd", "3rd",
 	}
 	fmt.Println(m)
@@ -18,7 +18,7 @@ func main() {
 		return append(m, m...)
 	})
 	fmt.Println(m1)
-	
+
 	m2 := modify(m, func([]string) []string {
 		return m[:len(m)-1]
 	})
