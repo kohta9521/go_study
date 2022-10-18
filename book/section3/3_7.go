@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// my data is structure
 type Mydata struct {
 	Name string
 	Data []int
