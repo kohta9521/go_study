@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strconv"
 )
 
 func Input(msg string) string {
@@ -14,9 +13,9 @@ func Input(msg string) string {
 	return scanner.Text()
 }
 
-func main() {
-	x := Input("type a price")
-	n, err := strconv.Atoi(x)
-	p := float64(n)
-	fmt.Println(int(p * 1.1))
-}
+// func main() {
+// 	x := Input("type a price")
+// 	n, err := strconv.Atoi(x)
+// 	p := float64(n)
+// 	fmt.Println(int(p * 1.1))
+// }
