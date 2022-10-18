@@ -13,7 +13,7 @@ func Double(i int) {
 func Doublev2(i *int) {
 	*i = *i * 2
 }
-func Doublev3(s []int)  {
+func Doublev3(s []int) {
 	for i, v := range s {
 		s[i] = v * 2
 	}
@@ -43,8 +43,8 @@ func main() {
 	Doublev2(p)
 	fmt.Println(*p)
 
-	var sl []int ={1, 2, 3}
+	// var sl []int ={1, 2, 3}
 
-	Doublev3(sl)
-	fmt.Println(sl)
+	// Doublev3(sl)
+	// fmt.Println(sl)
 }

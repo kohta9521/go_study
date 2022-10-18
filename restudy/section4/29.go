@@ -3,15 +3,13 @@ package main
 import (
 	"fmt"
 	"log"
-	"os"
 )
 
-func LoggingSettings(logFile string) {
-	logfile, _ := os.OpenFile(logFile, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
-	multiLogFile := io.OpenFile(logFile, os.Stdout, logfile)
-	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
-	log.SetOutput(multiLogFile)
-}
+// func LoggingSettings(logFile string) {
+// 	logfile, _ := os.OpenFile(logFile, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+// 	multiLogFile := io.OpenFile(logFile, os.Stdout, logfile)
+// 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
+// 	log.SetOutput(multiLogFile)
 
 func main() {
 	//これは他の言語での場合 Goの標準にはない
