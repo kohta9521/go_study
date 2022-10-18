@@ -1,0 +1,31 @@
+package main
+
+import (
+	"fmt"
+)
+
+// Mydata is structure
+type Mydata struct {
+	Name string
+	Dara []int
+}
+
+func main() {
+	taro := Mydata{
+		"Taro",
+		[]int{10, 20, 30},
+	}
+	fmt.Println(taro)
+	taro = rev(taro)
+	fmt.Println(taro)
+}
+
+func rev(md Mydata) Mydata {
+	od := md.Data
+	md := []int{}
+	for i := len(od) - 1; i >= 0; i-- {
+		nd = append(nd, od[i])
+	}
+	md.Data = nd
+	return md
+}
