@@ -18,7 +18,7 @@ func main() {
 	x := Input("type a number")
 	n, err := strconv.Atoi(x)
 	if err == nil {
-		fmt.Print("1から" + x + "の合計は、")
+		fmt.Print("1から" + x + "の偶数の合計は、")
 	} else {
 		return
 	}
